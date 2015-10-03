@@ -39,6 +39,41 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
     }, 1000);
   };
+
+
+  // Form data for the advanced search modal
+  $scope.advancedSearchData = {};
+
+  // Create the login modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/advancedSearch.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+  // Triggered in the login modal to close it
+  $scope.closeAdvancedSearch = function() {
+    $scope.modal.hide();
+  };
+
+  // Open the login modal
+  $scope.advancedSearch = function() {
+    $scope.modal.show();
+  };
+
+  // Perform the login action when the user submits the login form
+  $scope.doAdvancedSearch = function() {
+    console.log('Doing advancedSearch', $scope.advancedSearchData);
+
+    // Simulate a login delay. Remove this and replace with your login
+    // code if using a login system
+    $timeout(function() {
+      $scope.closeAdvancedSearch();
+    }, 1000);
+  };
+
+  
+
 })
 
 .controller('PlaylistsCtrl', function($scope) {
