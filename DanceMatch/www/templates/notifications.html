@@ -1,15 +1,17 @@
 <ion-view view-title="Notifications">
   <ion-content>
-
-  <div class="notifications">
-
+  <div class="buttons">
+      <button class="button button-clear" ng-click="findTheMatch()">Refresh</button>
+    </div>
+  <div class="notifications" ng-repeat = "match in Match">
+    
     <a class="item item-avatar" href="#">
-      <img src="venkman.jpg">
-      <h2>Eddie Tapia </h2>
+      <!-- <img src="venkman.jpg"> -->
+      <h2>{{match.user1email}} </h2>
       <p>I am looking for a partner and I am a beginner dancer...</p>
     </a>
 
-    <a class="item item-avatar" href="#">
+    <!-- <a class="item item-avatar" href="#">
       <img src="venkman.jpg">
       <h2>Jennifer Lopez</h2>
       <p>I am looking for a partner and I am an advanced dancer...</p>
@@ -25,7 +27,7 @@
       <img src="venkman.jpg">
       <h2>Kim Kardashian</h2>
       <p>I am looking for a partner and I am an amatuer dancer...</p>
-    </a>
+    </a> -->
 
 </div>
 

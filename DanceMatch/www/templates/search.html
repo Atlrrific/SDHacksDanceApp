@@ -20,11 +20,14 @@
 </div>
 <div class="searchresults">
 	<ion-list> 
-		<ion-item class="item-thumbnail-left item-text-wrap">
+		<ion-item class="item-thumbnail-left item-text-wrap"  ng-repeat="place in Places"
+		ng-click="findMatch(place)">
 			<img src="http://placehold.it/100x100" alt="Photo">
-			<h2>Name of Event</h2>
-			<h3>Location</h3>
-			<p>Brief description of the event</p>
+			<h2>{{place.name}}</h2>
+			<!-- <h2>{{Places}}</h2> -->
+			<!-- <h3>{{place.location}}</h3> -->
+			<p>{{place.location.display_address[0]}}</p>
+			{{count}}
 		</ion-item>
 	</ion-list>
 </div>
