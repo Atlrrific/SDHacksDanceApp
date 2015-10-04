@@ -1,33 +1,36 @@
 <ion-view view-title="Profile">
   <ion-content>
-    <h2> Input your location to find events</h2>
-  </ion-content>
-<div class="bar bar-subheader item-input-inset bar-light">
-  <label class="item-input-wrapper bar-positive">
-    <i class= "icon ion-search placeholder-icon"></i>
-    <input type="search" placeholder="Search Events">
+
+<a class="item item-avatar" href="#">
+      <img src="venkman.jpg">
+
+    </a>
+
+
+  <div class="Profile Information">
+  <label class="item item-input item-floating-label">
+    <span class="input-label">First Name</span>
+    <input type="text" placeholder="First Name">
   </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Last Name</span>
+    <input type="text" placeholder="Last Name">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Skill level</span>
+    <input type="text" placeholder="Your Skill Level (amatuer,beginner,advanced,professional)">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Genre of Music</span>
+    <input type="text" placeholder="Genre of Music">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Location</span>
+    <input type="text" placeholder="Location">
+  </label>
+</div>
 
-</div>
-<div class= "advanced">
-  <label class="item">
-      <br>
-      <br>
-          <button class="button button-block button-positive" ng-click="advancedSearch()" type="submit">Advanced Search</button>
-    </label>
-</div>
 
-</div>
-<div class="searchresults">
-  <ion-list> 
-    <ion-item class="item-thumbnail-left item-text-wrap">
-      <img src="http://placehold.it/100x100" alt="Photo">
-      <h2>Name of Event</h2>
-      <h3>Location</h3>
-      <p>Brief description of the event</p>
-    </ion-item>
-  </ion-list>
-</div>
 
   </ion-content>
 </ion-view>
