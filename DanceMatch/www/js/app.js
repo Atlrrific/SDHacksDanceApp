@@ -41,6 +41,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   })
 
+  .state('app.advancedSearch', {
+      url: '/search/advancedSearch',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/advancedSearch.html'
+        }
+      }
+    })
+
   .state('app.notifications', {
       url: '/notifications',
       views: {
@@ -68,6 +77,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   });
+
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/history');
 });

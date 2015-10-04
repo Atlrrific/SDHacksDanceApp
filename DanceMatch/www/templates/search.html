@@ -3,51 +3,19 @@
     <h2> Input your location to find events</h2>
   </ion-content>
 <div class="bar bar-subheader item-input-inset bar-light">
-	<label class="item-input-wrapper bar-light">
+	<label class="item-input-wrapper bar-positive">
 		<i class= "icon ion-search placeholder-icon"></i>
 		<input type="search" placeholder="Search Events">
 	</label>
+
 </div>
 <div class= "advanced">
 	<label class="item">
 		  <br>
 		  <br>
-          <button class="button button-block button-positive" type="submit">Advanced Search</button>
+          <button class="button button-block button-positive" ng-click="advancedSearch()" type="submit">Advanced Search</button>
     </label>
 </div>
-
-
-<label class="item item-input item-select">
- 	<div class= "input-label"> 
- 		Time Available
- 	</div>
- 	<select>
- 		<option>12am</option>
- 		<option>1am</option>
- 		<option>2am</option>
- 		<option>3am</option>
- 		<option>4am</option>
- 		<option>5am</option>
- 		<option>6am</option>
- 		<option>7am</option>
- 		<option>8am</option>
- 		<option>9am</option>
- 		<option>10am</option>
- 		<option>11am</option>
- 		<option>12pm</option>
- 		<option>1pm</option>
- 		<option>2pm</option>
- 		<option>3pm</option>
- 		<option>4pm</option>
- 		<option>5pm</option>
- 		<option>6pm</option>
- 		<option>7pm</option>
- 		<option>8pm</option>
- 		<option>9pm</option>
- 		<option>10pm</option>
- 		<option>11pm</option>
-    </select>
-</label>
 
 </div>
 <div class="searchresults">
@@ -60,69 +28,6 @@
 		</ion-item>
 	</ion-list>
 </div>
-
-
-
-<!--
-<h5> Gender</h5>
-
-<form>
-  <input type="radio" name="maleGender" value="male" checked>Male <br>
-  <input type="radio" name="femaleGender" value="female">Female <br>
-  <input type="radio" name="otherGender" value="other">Other
-</form>
-
-<br>
-<br>
-
-<h5> Music Preference</h5>
-
-<form>
-  <input type="radio" name="hipHopType" value="hip hop">Hip Hop
-  <br>
-  <input type="radio" name="indieRockType" value="irock" checked>Indie Rock
-  <br>
-  <input type="radio" name="popType" value="pop">Pop
-  <br>
-  <input type="radio" name="r&bType" value="r&b">R & B
-  <br>
-  <input type="radio" name="rock" value="rock">Rock 'n Roll'
-  <br>
-  <input type="radio" name="salsaType" value="salsa">Salsa
-  <br>
-  <input type="radio" name="otherType" value="other">Other
-</form>
-
-<br>
-<br>
-
-<h5> Skill Level</h5>
-
-<form>
-  <input type="radio" name="skill" value="Beginner" checked>Beginner
-  <br>
-  <input type="radio" name="skill" value="Intermediate">Intermediate
-  <br>
-  <input type="radio" name="skill" value="Advance">Advanced
-  <br>
-  <input type="radio" name="skill" value="Professional">Professional
-</form>
-
-<br>
-<br>
-
-<h5> Desired Partner Skill Level</h5>
-
-<form>
-  <input type="radio" name="partnerskill" value="Beginner" checked>Beginner
-  <br>
-  <input type="radio" name="partnerskill" value="Intermediate">Intermediate
-  <br>
-  <input type="radio" name="partnerskill" value="Advance">Advanced
-  <br>
-  <input type="radio" name="partnerskill" value="Professional">Professional
-</form>
--->
 
   </ion-content>
 </ion-view>

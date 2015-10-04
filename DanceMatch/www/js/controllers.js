@@ -48,17 +48,17 @@ angular.module('starter.controllers', [])
   $ionicModal.fromTemplateUrl('templates/advancedSearch.html', {
     scope: $scope
   }).then(function(modal) {
-    $scope.modal = modal;
+    $scope.searchModal = modal;
   });
 
   // Triggered in the login modal to close it
   $scope.closeAdvancedSearch = function() {
-    $scope.modal.hide();
+    $scope.searchModal.hide();
   };
 
   // Open the login modal
   $scope.advancedSearch = function() {
-    $scope.modal.show();
+    $scope.searchModal.show();
   };
 
   // Perform the login action when the user submits the login form

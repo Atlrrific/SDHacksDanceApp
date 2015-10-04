@@ -1,0 +1,39 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">Advanced Search</h1>
+    <div class="buttons">
+      <button class="button button-positive" ng-click="closeAdvancedSearch()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content ng-controller="AdvancedSearchCtrl">
+    <br>
+    <form ng-submit="doLogin()">
+
+  <div class="listForSearch">
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Gender of your partner</span>
+    <input type="text" placeholder="Gender of your partner">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Genre of Music</span>
+    <input type="text" placeholder="Genre of Music">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Skill level of your partner</span>
+    <input type="text" placeholder="Skill level of your partner">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Time you are available</span>
+    <input type="text" placeholder="Time you are available">
+  </label>
+</div>
+
+
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Submit</button>
+          <br>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
