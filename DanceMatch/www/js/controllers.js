@@ -10,7 +10,7 @@ angular.module('starter.controllers', [])
   //});
 
   $scope.Places;
-  $http.get('http://localhost:8080/yelp' ).then(function(resp) {
+  $http.get('http://dancify.mybluemix.net/yelp' ).then(function(resp) {
     console.log('Success', resp);
     $scope.Places = resp.data.businesses;
     console.log(resp.data.businesses[0].name);
@@ -84,9 +84,10 @@ $scope.userEmail = 'ramon@yes.com';
     // console.log("Sending the data");
     // console.log($scope.matchData);
 
-    $http.get('http://localhost:8080/matchesUser1').then(function(resp) {
-    console.log('Success', resp);
-     $scope.Match = resp;
+    $http.get('http://dancify.mybluemix.net/matchesUser1').then(function(resp) {
+    console.log('Success MATCH', resp);
+     $scope.Match = resp.data;
+     console.log($scope.Match);
     // For JSON responses, resp.data contains the result
     }, function(err) {
       console.error('ERR', err);
@@ -125,7 +126,7 @@ $scope.userEmail = 'ramon@yes.com';
     console.log("Sending the data");
     console.log($scope.matchData);
 
-    $http.post('http://localhost:8080/matchrequest', $scope.matchData).then(function(resp) {
+    $http.post('http://dancify.mybluemix.net/matchrequest', $scope.matchData).then(function(resp) {
     console.log('Success', resp);
     // For JSON responses, resp.data contains the result
     }, function(err) {
@@ -133,7 +134,7 @@ $scope.userEmail = 'ramon@yes.com';
       // err.status will contain the status code
     })
 
-    $http.get('http://localhost:8080/matchrequest' ).then(function(resp) {
+    $http.get('http://dancify.mybluemix.net/matchrequest' ).then(function(resp) {
     console.log('Success', resp);
     // For JSON responses, resp.data contains the result
     }, function(err) {
@@ -152,7 +153,7 @@ $scope.userEmail = 'ramon@yes.com';
 
   // Triggered in the login modal to close it
   $scope.closeMatchModal = function() {
-    $scope.modal.hide();
+    $scope.matchModal.hide();
   };
 
 
@@ -192,7 +193,7 @@ $scope.userEmail = 'ramon@yes.com';
     //   console.log(xhr);
     // }
 
-    $http.get('http://localhost:8080/matchrequest' ).then(function(resp) {
+    $http.get('http://dancify.mybluemix.net/matchrequest' ).then(function(resp) {
     console.log('Success', resp);
     // For JSON responses, resp.data contains the result
     }, function(err) {
